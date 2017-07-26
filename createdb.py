@@ -2,6 +2,8 @@
 
 import sqlite3
 
+### ceci est un commentaire ....
+
 try:
     db = sqlite3.connect('xavbank.db')
 
