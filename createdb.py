@@ -2,7 +2,8 @@
 
 import sqlite3
 
-##commetn git
+##le comment pour GIT / bash_win
+
 
 try:
     db = sqlite3.connect('xavbank.db')
