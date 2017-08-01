@@ -16,6 +16,11 @@ try:
     db.commit()
 
     cursor.execute('''insert into category values(0,"Other")''')
+    cursor.execute('''insert into category values(1,"Restaurant")''')
+    cursor.execute('''insert into category values(2,"Automobile")''')
+    cursor.execute('''insert into category values(3,"Courses")''')
+    cursor.execute('''insert into category values(4,"Loisir")''')
+    cursor.execute('''insert into category values(5,"Vetements")''')
     db.commit()
 
     cursor.close()

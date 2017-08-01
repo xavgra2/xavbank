@@ -27,7 +27,7 @@ try:
                         print('New Transac : '+data['label']+' amount= '+data['amount'])
 
         except Exception as e:
-            print('Erreur de lecture'.format(e.strerror))
+            print('Erreur pour recuperer le compte' + account[1])
 #            exit(3)
 
     db.commit()
