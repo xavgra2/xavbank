@@ -29,3 +29,10 @@ TABLE_TO_DUMP = 'transac'
 DB_FILE = 'xavbank.db'
 
 print getTableDump(DB_FILE, TABLE_TO_DUMP)
+
+print "CATEGORY"
+
+TABLE_TO_DUMP = 'category'
+DB_FILE = 'xavbank.db'
+
+print getTableDump(DB_FILE, TABLE_TO_DUMP)

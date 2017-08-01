@@ -21,11 +21,11 @@ try:
                 if res[0]==0:
                     cursor.execute('insert into account (accountid,label,currency,solde,type,iban,private) values (?,?,?,?,?,?,?)', (data['id'],data['label'],data['currency'],data['balance'],data['type'],data['iban'],1))
                     new_account=new_account+1
-
+                    print('New Account : '+data['label'])
         db.commit()
         cursor.close()
         db.close()
-        print (new_account)
+        print (str(new_account)+" nouveaux comptes")
         
     except Exception as e2:
         print ('erreur a l_insertion'.format(e2.strerror))
